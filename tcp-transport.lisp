@@ -9,7 +9,7 @@
   (handler-case
       (let ((host (server-address-value address "host"))
             (port (parse-integer (server-address-value address "port"))))
-        (net.sockets:make-socket
+        (iolib:make-socket
          :remote-host host
          :remote-port port))
     (t (c)

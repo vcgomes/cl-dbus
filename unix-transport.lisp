@@ -9,10 +9,10 @@
   (handler-case
       (let ((abstract (server-address-value address "abstract"))
             (path (server-address-value address "path")))
-        (net.sockets:make-socket
+        (iolib:make-socket
          :address-family :local
          :external-format :ascii
-         :remote-filename (net.sockets:ensure-address
+         :remote-filename (iolib:ensure-address
                            (or abstract path)
                            :family :local
                            :abstract (if abstract

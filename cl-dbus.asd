@@ -12,7 +12,7 @@
                (:file "network" :depends-on ("packages" "cookie-sha1-auth" "anonymous-auth"
                                                         "transport"))
                (:file "test" :depends-on ("packages" "network")))
-  :depends-on (iterate flexi-streams defclass-star iolib babel cl-ppcre
+  :depends-on (iterate flexi-streams hu.dwim.defclass-star iolib babel cl-ppcre
                        ironclad osicat))
 
 ;;; EOF
